@@ -1,20 +1,15 @@
 <script>
-    var name = "svelte"
-    var image = "assets/svelte_cap.png"
+  import { url } from '@roxi/routify'
+  const name = 'svelte'
+  const image = 'assets/svelte_cap.png'
 </script>
 
-<div class="main">
-    <img src={image}/>
-    <h1>Welcome to {name}!</h1>
-</div>
+<img src={image} />
+<h1>Welcome to {name}!</h1>
+<a href={$url('/test')}>Link to Test Page</a>
 
 <style>
-    .main {
-        text-align: center;
-        margin: 50px auto;
-    }
-
-    img {
-        max-width: 100%;
-    }
+  img {
+    max-width: 100%;
+  }
 </style>
