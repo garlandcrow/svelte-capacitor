@@ -16,7 +16,7 @@
     "dev:android": "run-p dev:start cap-run:android",
     "#Dev: Core": "These allow the code to be developed with HMR",
     "dev:preview": "vite preview",
-    "dev:start": "run-p build:routify dev:vite",
+    "dev": "run-p build:routify dev:vite",
     "dev:vite": "vite --host --port 5000",
     "#Utilities": "Various utilities",
     "validate": "svelte-check"
@@ -31,11 +31,14 @@
     "prettier-plugin-svelte": "^2.3.1",
     "svelte": "^3.37.0",
     "svelte-preprocess": "^4.7.3",
+    "tailwindcss": "^2.2.6",
     "typescript": "^4.2.4",
     "vite": "^2.2.3",
     "vite-aliases": "^0.6.3",
     "vite-plugin-compression": "^0.2.5",
-    "vite-tsconfig-paths": "^3.3.10"
+    "vite-plugin-windicss": "^1.2.5",
+    "vite-tsconfig-paths": "^3.3.10",
+    "windicss": "^3.1.5"
   },
   "dependencies": {
     "@capacitor/android": "^3.0.1",
