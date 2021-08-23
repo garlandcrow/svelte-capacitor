@@ -1,9 +1,3 @@
-<div class="main">
+<ion-app>
   <slot />
-</div>
-
-<style>
-  .main {
-    margin: 50px auto;
-  }
-</style>
+</ion-app>

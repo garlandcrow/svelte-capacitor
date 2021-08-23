@@ -5,11 +5,3 @@
 <div class="p-4 rounded-lg bg-blue-500 text-white" on:click={() => count++}>
   Count: {count}
 </div>
-
-<div class="test">tester</div>
-
-<style>
-  .test {
-    @apply bg-red-500;
-  }
-</style>
