@@ -1,19 +1,60 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- add to homescreen for ios    -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <title>Ionic Companion</title>
+    <meta
+      name="description"
+      content="A developer's companion app to Ionic greatness powered by svelte"
+    />
+    <meta name="og:title" property="og:title" content="Ionic Companion" />
+    <meta
+      name="og:description"
+      property="og:description"
+      content="A developer's companion app to Ionic greatness, powered by svelte"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="192x192" />
+
+    <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180" />
+
     <meta name="theme-color" content="#ffffff" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Svelte_Capacitor v2.0.0</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core@5.4.0/css/ionic.bundle.css"
+    />
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core@5.4.0/dist/ionic/ionic.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core@5.4.0/dist/ionic/ionic.js"
+    ></script>
+
+    <script defer type="module" src="/src/main.ts"></script>
   </head>
 
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
