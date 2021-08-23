@@ -1,19 +1,25 @@
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
-import WindiCSS from 'vite-plugin-windicss'
-import { getAliases } from 'vite-aliases'
-
-const aliases = getAliases()
+import tsconfigPaths from 'vite-tsconfig-paths'
+import sveltePreprocess from 'svelte-preprocess'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [WindiCSS(), svelte()],
+  plugins: [
+    // Consult https://github.com/sveltejs/svelte-preprocess for more information
+    svelte({
+      preprocess: sveltePreprocess({
+        defaults: {
+          style: 'postcss',
+        },
+        postcss: true,
+      }),
+    }),
+    tsconfigPaths(),
+  ],
   publicDir: './assets/',
   build: {
     outDir: './public/',
-  },
-  resolve: {
-    alias: aliases,
   },
   optimizeDeps: { exclude: ['@roxi/routify', '@urql/svelte'] },
 })
