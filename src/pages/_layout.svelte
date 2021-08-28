@@ -2,12 +2,8 @@
   import SafeInsetDiv from '@components/SafeInsetDiv.svelte'
 </script>
 
-<SafeInsetDiv class="main">
-  <slot />
+<SafeInsetDiv class="w-screen h-screen">
+  <div class="flex flex-col h-full p-6">
+    <slot />
+  </div>
 </SafeInsetDiv>
-
-<style>
-  .main {
-    margin: 50px auto;
-  }
-</style>
