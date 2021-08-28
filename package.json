@@ -18,20 +18,18 @@
     "dev:preview": "vite preview",
     "dev": "run-p build:routify dev:vite",
     "dev:start": "run-p build:routify dev:vite",
-    "dev:vite": "vite --host --port 5001",
+    "dev:vite": "vite --host --port 5000",
     "#Utilities": "Various utilities",
     "validate": "svelte-check"
   },
   "devDependencies": {
     "@roxi/routify": "^2.18.0",
     "@sveltejs/vite-plugin-svelte": "*",
-    "autoprefixer": "^10.3.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.2",
     "prettier-plugin-svelte": "^2.4.0",
     "svelte": "^3.42.4",
     "svelte-preprocess": "^4.8.0",
-    "tailwindcss": "^2.2.8",
     "typescript": "^4.4.2",
     "vite": "^2.5.1",
     "vite-tsconfig-paths": "^3.3.10"
