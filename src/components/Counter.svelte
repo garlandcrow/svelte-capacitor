@@ -2,14 +2,16 @@
   let count: number = 0
 </script>
 
-<div class="p-4 rounded-lg bg-blue-500 text-white" on:click={() => count++}>
+<div class="" on:click={() => count++}>
   Count: {count}
 </div>
 
-<div class="test">tester</div>
+<div class="use-style">This is styled in style tag.</div>
 
 <style>
-  .test {
-    @apply bg-red-500;
+  .use-style {
+    background-color: red;
+    color: white;
+    padding: 5px;
   }
 </style>
