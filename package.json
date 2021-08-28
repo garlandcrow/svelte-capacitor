@@ -23,6 +23,7 @@
     "validate": "svelte-check"
   },
   "devDependencies": {
+    "@capacitor-community/http": "^1.2.0",
     "@roxi/routify": "^2.18.0",
     "@sveltejs/vite-plugin-svelte": "*",
     "daisyui": "^1.14.0",
