@@ -1,0 +1,10 @@
+{
+  "counter": {
+    "label": "Counted to: {count}"
+  },
+  "greeting": "Welcome to Svelte+Capacitor",
+  "links": {
+    "home": "Go back Home",
+    "test": "Link to Test page"
+  }
+}
