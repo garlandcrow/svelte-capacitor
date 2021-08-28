@@ -9,6 +9,8 @@ specifiers:
   '@roxi/routify': ^2.18.0
   '@sveltejs/vite-plugin-svelte': '*'
   daisyui: ^1.14.0
+  date-fns: ^2.23.0
+  date-fns-tz: ^1.1.6
   npm-run-all: ^4.1.5
   prettier: ^2.3.2
   prettier-plugin-svelte: ^2.4.0
@@ -34,6 +36,8 @@ devDependencies:
   '@roxi/routify': 2.18.3
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.19_svelte@3.42.4+vite@2.5.1
   daisyui: 1.14.0
+  date-fns: 2.23.0
+  date-fns-tz: 1.1.6_date-fns@2.23.0
   npm-run-all: 4.1.5
   prettier: 2.3.2
   prettier-plugin-svelte: 2.4.0_prettier@2.3.2+svelte@3.42.4
@@ -695,6 +699,19 @@ packages:
       abab: 2.0.5
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.7.0
+    dev: true
+
+  /date-fns-tz/1.1.6_date-fns@2.23.0:
+    resolution: {integrity: sha512-nyy+URfFI3KUY7udEJozcoftju+KduaqkVfwyTIE0traBiVye09QnyWKLZK7drRr5h9B7sPJITmQnS3U6YOdQg==}
+    peerDependencies:
+      date-fns: '>=2.0.0-alpha.13'
+    dependencies:
+      date-fns: 2.23.0
+    dev: true
+
+  /date-fns/2.23.0:
+    resolution: {integrity: sha512-5ycpauovVyAk0kXNZz6ZoB9AYMZB4DObse7P3BPWmyEjXNORTI8EJ6X0uaSAq4sCHzM1uajzrkr6HnsLQpxGXA==}
+    engines: {node: '>=0.11'}
     dev: true
 
   /debug/4.3.2:
