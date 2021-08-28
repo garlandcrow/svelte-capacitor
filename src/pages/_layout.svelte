@@ -1,6 +1,10 @@
-<div class="main">
+<script lang="ts">
+  import SafeInsetDiv from '@components/SafeInsetDiv.svelte'
+</script>
+
+<SafeInsetDiv class="main">
   <slot />
-</div>
+</SafeInsetDiv>
 
 <style>
   .main {
