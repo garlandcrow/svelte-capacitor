@@ -2,16 +2,16 @@
   let count: number = 0
 </script>
 
-<div class="" on:click={() => count++}>
-  Count: {count}
+<div class="flex flex-col gap-4 p-4">
+  <div class="gap-4 p-4 bg-blue-500 rounded" on:click={() => count++}>
+    Count: {count}
+  </div>
+
+  <div class="use-style">This is styled in style tag.</div>
 </div>
 
-<div class="use-style">This is styled in style tag.</div>
-
-<style>
+<style lang="postcss">
   .use-style {
-    background-color: red;
-    color: white;
-    padding: 5px;
+    @apply bg-green-500 text-white p-4 rounded;
   }
 </style>
