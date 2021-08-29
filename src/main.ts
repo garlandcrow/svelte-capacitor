@@ -1,6 +1,10 @@
 import App from './App.svelte'
 import './i18n'
-import 'virtual:windi.css'
+// https://windicss.org/integrations/vite.html
+import 'virtual:windi-base.css'
+import 'virtual:windi-components.css'
+import './global.css'
+import 'virtual:windi-utilities.css'
 
 const app = new App({
   target: document.getElementById('app'),
