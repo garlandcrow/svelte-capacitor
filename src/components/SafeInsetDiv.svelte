@@ -1,6 +1,8 @@
 <script lang="ts">
   import { onDestroy } from 'svelte'
+  import { browser } from '$app/env';
   import safeAreaInsets from 'safe-area-insets'
+  
 
   export let top = true
   export let bottom = true
@@ -14,17 +16,20 @@
     bottom: number
   }
 
-  let insets: Insets = safeAreaInsets
-
-  const updateinsets = (newInsets: Insets) => {
-    insets = { ...insets, ...newInsets }
+  let insets: Insets = {top: 0, left: 0, right: 0, bottom: 0 }
+  
+  if (browser) {
+    insets = safeAreaInsets
+    const updateinsets = (newInsets: Insets) => {
+      insets = { ...insets, ...newInsets }
+    }
+  
+    safeAreaInsets.onChange(updateinsets)
+  
+    onDestroy(() => {
+      safeAreaInsets.offChange(updateinsets)
+    })
   }
-
-  safeAreaInsets.onChange(updateinsets)
-
-  onDestroy(() => {
-    safeAreaInsets.offChange(updateinsets)
-  })
 </script>
 
 <div

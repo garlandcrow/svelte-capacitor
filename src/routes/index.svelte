@@ -1,6 +1,5 @@
 <script lang="ts">
   import { _ } from 'svelte-i18n'
-  import { url } from '@roxi/routify'
   import Counter from '@components/Counter.svelte'
 
   const image = 'svelte_cap.png'
@@ -12,7 +11,7 @@
 
 <Counter />
 
-<a href={$url('/test')}>{$_('links.test')}</a>
+<a href="/test">{$_('links.test')}</a>
 
 <style>
   img {
