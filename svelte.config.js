@@ -1,3 +1,4 @@
+import adapter from '@sveltejs/adapter-static';
 import sveltePreprocess from 'svelte-preprocess'
 import path from 'path'
 
@@ -8,6 +9,13 @@ export default {
     postcss: true,
   }),
   kit: {
+    adapter: adapter({
+      fallback: "index.html",
+    }),
+    prerender: {
+      enabled: false,
+    },
+    ssr: false,
     // hydrate the <div id="svelte"> element in src/app.html
     target: '#svelte',
     vite: {
@@ -19,3 +27,4 @@ export default {
     },
   },
 }
+

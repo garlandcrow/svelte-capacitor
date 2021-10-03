@@ -1,6 +1,6 @@
 /node_modules/
-/dist/
-.routify/
+/build/
+/.svelte-kit/
 android/
 ios/
 
