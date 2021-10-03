@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { _ } from 'svelte-i18n'
   import { url } from '@roxi/routify'
   import Counter from '@components/Counter.svelte'

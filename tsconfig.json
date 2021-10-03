@@ -29,6 +29,7 @@
      */
     "allowJs": true,
     "checkJs": true,
+    "strict": true,
     "paths": {
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
